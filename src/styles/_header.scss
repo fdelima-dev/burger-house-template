@@ -1,0 +1,45 @@
+@use 'variables';
+
+header{
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1360px;
+        width: 100%;
+        margin: 0 auto;
+        &__brand{
+            img{
+                width: 150px;
+                height: auto;
+            }
+        }
+        &__menu{
+            &__list{
+                list-style: none;
+                &__item{
+                    float: left;
+                    a {
+                        color: variables.$corLink;
+                        text-decoration: none;
+                        padding: 0 20px;
+                        display: block;
+                        &:hover{
+                            color: variables.$corTema;
+                        }
+                    }
+                }
+            }
+        }
+        &__btnPedido{
+            button{
+                padding: 8px;
+                width: 120px;
+                border: none;
+                background-color: variables.$corTema;
+                color: variables.$corDeFundo;
+                border-radius: 12px;
+            }
+        }
+    }
+}
