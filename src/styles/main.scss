@@ -1,6 +1,9 @@
 @use 'variables';
 @use 'header';
 @use 'hero';
+@use 'data';
+@use 'gallery';
+@use 'footer';
 
 *{
     margin: 0;
@@ -22,5 +25,8 @@ body{
 }
 .fonteTema{
     font-family: variables.$fonteTema;
+    color: variables.$corTema;
+}
+.corTema{
     color: variables.$corTema;
 }

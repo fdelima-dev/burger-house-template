@@ -7,9 +7,17 @@
     background-position: center center;
     height: 600px;
     margin-top: 50px;
+
+    @media (max-width: 768px){
+        background-color: rgba(0,0,0,.2);
+    }
     &__container{
         padding-top: 50px;
         padding-left: 80px;
+
+        @media (max-width: 768px){
+            padding: 18px;
+        }
         &__leftSide{
             p.intro{
                 color: variables.$corTema;
@@ -29,7 +37,7 @@
                 margin-top: 20px;
 
                 @media (max-width: 1360px){
-                    text-shadow: 2px 2px 5px variables.$corDeFundo;
+                    text-shadow: 8px 5px 12px variables.$corDeFundo;
                 }
             }
             button{
